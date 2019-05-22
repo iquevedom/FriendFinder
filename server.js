@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, './app/public')));
 
-require(path.join((__dirname, './app/routing/htmlRoutes'))(app);
+require(path.join(__dirname, "./app/routing/htmlRoutes"))(app);
 
 app.listen(PORT, function(){
     console.log("App listening on port " + PORT);
