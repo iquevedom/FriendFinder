@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body style="background: linear-gradient(to right, white,  blue)">
 
     <div class="container">
 
@@ -87,7 +87,7 @@
 
 
         <h4><strong>Q 5</strong></h3>
-        <h5>Working outdoors is better.</h5>
+        <h5>Working outdoors is better.</h4>
         <select class="chosen-select" id="q5">
             <option value=""></option>
             <option value="1">1 (Disagree)</option>
@@ -98,7 +98,7 @@
         </select>
     </div>
 
-        <h4><strong>Q 6</strong></h>
+        <h4><strong>Q 6</strong></h4>
         <h5>I like to be surrounded by people.</h5>
         <select class="chosen-select" id="q6">
             <option value=""></option>
@@ -158,7 +158,7 @@
         <br>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        <button type="submit" class="btn btn-primary btn-lg" id="submit"><i class="fa fa-check-circle"
                 aria-hidden="true"></i>
             Submit</button>
 
@@ -180,7 +180,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button id="btn-close1" type="button" class="close" data-dismiss="modal">×</button>
-                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    <h2 id="best-match" class="modal-title"><strong>Best Match</strong></h2>
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name">sdafasf</h2>
@@ -227,8 +227,12 @@
                     console.log("el elegido es: ", data.name);
 
                     // preapra modal
-                    var bestName = document.getElementById("match-name");
-                    bestName.textContent=data.name;
+                    var yourName = document.getElementById("best-match");
+                    yourName.style.fontSize = "20px";
+                    yourName.textContent=($("#name").val().trim() + " your Best Match is :");
+
+                    var matchName = document.getElementById("match-name");
+                    matchName.textContent=data.name;
 
                     var bestImage = document.getElementById("match-img");
                     bestImage.src=data.photo;
