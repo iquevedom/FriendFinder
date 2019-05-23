@@ -198,7 +198,7 @@
 
     <script>
 
-        // capturar respuestas
+        // get the answers
         $("#submit").on("click", function (event) {
             event.preventDefault();
 
@@ -219,6 +219,9 @@
                 ]
             };
 
+                console.log(newSurvey.name.length);
+            if (newSurvey.name.length > 0) {
+
             // Question: What does this code do??
             console.log("reservacion " + newSurvey.name);
             $.post("/api/friends", newSurvey)
@@ -229,7 +232,7 @@
                     // preapra modal
                     var yourName = document.getElementById("best-match");
                     yourName.style.fontSize = "20px";
-                    yourName.textContent=($("#name").val().trim() + " your Best Match is :");
+                    yourName.textContent=($("#name").val().trim() + " your Best Friend Match is :");
 
                     var matchName = document.getElementById("match-name");
                     matchName.textContent=data.name;
@@ -265,6 +268,7 @@
                     }
 
                 });
+            }
 
         });
 
