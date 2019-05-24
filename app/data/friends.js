@@ -51,16 +51,16 @@ var friendsData = [
       name: "Robert Smith",
       photo: "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
       scores: [
-        "3",
-        "3",
-        "4",
-        "2",
-        "2",
         "1",
-        "3",
-        "2",
-        "2",
-        "3"
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
       ]
     },
     {
