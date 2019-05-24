@@ -10,8 +10,18 @@ In the back end the app starts a server that calls functions to perform the sear
 2. You have to answer a survey.
 3. The app will take your answers and responds with the best overall match friend.
 
-Main page
+- Main page
 ![Main page](app/data/img/Main.jpg)
+
+- Survey page
+    Enter your name and a photo url
+![Survey data](app/data/img/Survey1.jpg)
+
+    Questions, choose an option
+![Survey data](app/data/img/Survey2.jpg)
+
+    Best friend screen
+![Survey data](app/data/img/Survey3.jpg)
 
 ## Installation
 
