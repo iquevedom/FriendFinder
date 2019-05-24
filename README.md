@@ -11,7 +11,7 @@ In the back end the app starts a server that calls functions to perform the sear
 3. The app will take your answers and responds with the best overall match friend.
 
 Main page
-![Main page](/app/data/img/main.jpg)
+![Main page](app/data/img/main.jpg)
 
 ## Installation
 
